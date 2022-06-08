@@ -35,9 +35,11 @@ def main():
 
     if int(value) == number:
         print('Correct!')
-    else:
-        print('Wrong')   
-        print('Number is', '{:,}'.format(number))
+        return 1
+
+    print('Wrong')   
+    print('Number is', '{:,}'.format(number))
+    return 0
 
 if __name__ == '__main__':
     while True:
